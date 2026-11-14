@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Alona Skrypka | Data Analytics Portfolio</title>
+  <meta name="description" content="Data analytics portfolio of Alona Skrypka, an aspiring data analyst in Calgary. Projects in Power BI, DAX, Python, SQL and Tableau.">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230b1f3a'/%3E%3Ctext x='32' y='45' font-size='36' font-family='Arial' font-weight='900' text-anchor='middle' fill='%23ff8a1f'%3EA%3C/text%3E%3C/svg%3E">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="hero" id="top">
+  <div class="wrap">
+    <h1 class="big name">
+      <span class="hi">Hi,</span>
+      <span class="me">I'm Alona.</span>
+    </h1>
+    <p class="eyebrow">This is my <b>data analytics</b></p>
+    <hr class="rule">
+    <p class="big portfolio" aria-hidden="true">Portfolio.</p>
+    <nav class="nav" aria-label="Main">
+      <a href="#about">about</a>
+      <a href="#skills">skills</a>
+      <a href="#projects">projects</a>
+      <a href="#contact">contact</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section id="about" class="about">
+    <div class="wrap">
+      <h2 class="big">About<br>me</h2>
+      <p>I'm an aspiring <b>data analyst in Calgary</b> who likes questions that start with "why did this change?" and <b>turns data into clear answers</b>.</p>
+      <p>I clean large files with Python, query data with SQL, and build dashboards in Power BI and Tableau. I follow the Google Data Analytics process (<b>Ask, Prepare, Process, Analyze, Share, Act</b>), and I check my numbers twice before I share them.</p>
+      <p>My projects use open and public data. I document each step and keep personal details out of what I publish. The City of Calgary's open data inspired me after the "Exploring the City of Calgary's Open Data" event hosted by <a href="https://www.linkedin.com/company/data-for-good-yyc/">Data for Good YYC</a>.</p>
+    </div>
+  </section>
+
+  <section id="skills" class="skills">
+    <div class="wrap">
+      <div class="cols">
+        <div>
+          <h2 class="big">Analytical<br>skills</h2>
+          <ul>
+            <li>Data cleaning</li>
+            <li>Exploratory data analysis (EDA)</li>
+            <li>Data visualization</li>
+            <li>Dashboard development</li>
+            <li>Data storytelling</li>
+            <li>Documentation and reproducible projects</li>
+          </ul>
+        </div>
+        <div>
+          <h2 class="big">Tools &amp;<br>software</h2>
+          <ul>
+            <li>SQL <small>BigQuery</small></li>
+            <li>Python <small>pandas, numpy</small></li>
+            <li>Power BI <small>DAX</small></li>
+            <li>Tableau</li>
+            <li>Git and GitHub</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects">
+    <div class="wrap">
+      <h2 class="big work-intro">Featured<br>work</h2>
+
+      <article class="project">
+        <div>
+          <p class="num">01.</p>
+          <h3>Calgary Building Permits</h3>
+          <p class="sub">City of Calgary open data, Power BI and Python</p>
+          <p>How have permit volume, cost and waiting time changed in Calgary from 1999 to 2026? I cleaned 503,495 permits with pandas and numpy and built a six-page interactive Power BI report.</p>
+          <ul class="facts">
+            <li>Record <strong>26,521 permits in 2024</strong>.</li>
+            <li>Median wait to issue rose from <strong>6 days (2015) to 23 days (2024)</strong>.</li>
+            <li>The 2007 "drop" in median cost was a change in permit mix, not in prices.</li>
+          </ul>
+          <div class="pills">
+            <a class="pill" href="https://github.com/AlonaSkr/calgary-building-permits">View Analysis</a>
+            <a class="pill" href="https://github.com/AlonaSkr/calgary-building-permits/blob/main/calgary_permits.pbix">Power BI report</a>
+            <a class="pill" href="https://github.com/AlonaSkr/calgary-building-permits/tree/main/scripts">Python scripts</a>
+          </div>
+        </div>
+        <figure class="shot">
+          <img src="assets/calgary-overview.png" alt="Power BI Overview page of the Calgary building permits report: KPI cards, permits by type, cost and permits by year, and top communities by new housing units" loading="lazy">
+        </figure>
+      </article>
+
+      <article class="project">
+        <div>
+          <p class="num">02.</p>
+          <h3>Cyclistic Bike-Share Case Study</h3>
+          <p class="sub">Members vs casual riders, Python (pandas and numpy)</p>
+          <p>How do annual members and casual riders use bikes differently? I combined 12 months of trips, about 5.7 million rows (over five times Excel's row limit), and made three recommendations to convert casual riders into members.</p>
+          <ul class="facts">
+            <li>Casual rides average about <strong>19 minutes vs 12</strong> for members.</li>
+            <li>Members ride at weekday rush hours. Casual riders ride on weekend afternoons.</li>
+            <li>About two-thirds of rides in both groups are on electric bikes.</li>
+          </ul>
+          <div class="pills">
+            <a class="pill" href="https://www.kaggle.com/code/alonakatz/cyclistic-bike-share-case-study">View Analysis</a>
+            <a class="pill" href="https://www.kaggle.com/code/alonakatz/cyclistic-bike-share-case-study">Kaggle notebook</a>
+          </div>
+        </div>
+        <figure class="shot">
+          <img src="assets/cyclistic-monthly.png" alt="Line chart of monthly rides in thousands, May 2025 to April 2026, for members and casual riders. Both peak in summer and fall to a low in December and January" loading="lazy">
+        </figure>
+      </article>
+
+      <article class="project">
+        <div>
+          <p class="num">03.</p>
+          <h3>Bellabeat Case Study</h3>
+          <p class="sub">Smart-device wellness trends, SQL (BigQuery) and Tableau</p>
+          <p>Google Data Analytics capstone. I analysed public Fitbit data on activity, sleep and device use to find habits and give marketing recommendations for Bellabeat's Leaf tracker and app.</p>
+          <ul class="facts">
+            <li>Only about <strong>1 in 5 users</strong> reaches 10,000 steps a day.</li>
+            <li>Average sleep is about <strong>7.0 hours</strong> a night, but only 24 of 33 users tracked sleep.</li>
+          </ul>
+          <div class="pills">
+            <a class="pill" href="https://github.com/AlonaSkr/bellabeat-case-study">View Analysis</a>
+            <a class="pill" href="https://github.com/AlonaSkr/bellabeat-case-study/tree/main/sql">GitHub SQL</a>
+            <a class="pill" href="https://github.com/AlonaSkr/bellabeat-case-study#readme">GitHub README</a>
+          </div>
+        </div>
+        <figure class="shot">
+          <img src="assets/bellabeat-steps.png" alt="Tableau bar chart of average steps by hour of day: activity peaks in the evening and drops after lunch" loading="lazy">
+        </figure>
+      </article>
+    </div>
+  </section>
+
+  <section id="contact" class="contact">
+    <div class="wrap">
+      <h2 class="big"><span class="dark" style="color:var(--blue)">Let's</span><span>connect.</span></h2>
+      <p>I'm looking for junior data analyst roles and I'm happy to hear feedback on my projects.</p>
+      <a class="pill accent" href="mailto:alona.skrypka111@outlook.com">Get in Touch</a>
+      <div class="links">
+        <a href="https://www.linkedin.com/in/alona-skrypka-437130307">LinkedIn</a>
+        <a href="https://github.com/AlonaSkr">GitHub</a>
+        <a href="https://www.kaggle.com/alonakatz">Kaggle</a>
+      </div>
+      <p class="email-note">alona.skrypka111@outlook.com</p>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <p>© 2026 Alona Skrypka</p>
+    <p>The Calgary project contains information licensed under the <a href="https://data.calgary.ca/d/Open-Data-Terms/u45n-7awa">Open Government Licence – City of Calgary</a>. It is not affiliated with or endorsed by The City of Calgary.</p>
+  </div>
+</footer>
+
+</body>
+</html>
