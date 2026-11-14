@@ -68,6 +68,11 @@ section { padding-block: 88px; }
 .skills li small { display: block; color: var(--blue); font-size: 0.9rem; }
 .skills .big { color: var(--orange-bright); font-size: clamp(2.2rem, 7vw, 4rem); }
 
+.skills .transfer { margin-top: 64px; }
+.skills .transfer ul { columns: 1; column-gap: 48px; }
+@media (min-width: 760px) { .skills .transfer ul { columns: 2; } }
+.skills .transfer li { break-inside: avoid; }
+
 /* projects */
 .work-intro { margin-bottom: 20px; }
 .project { display: grid; gap: 28px; grid-template-columns: 1fr; padding-block: 56px; border-top: 3px solid var(--blue); }
